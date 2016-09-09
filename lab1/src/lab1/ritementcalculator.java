@@ -16,7 +16,7 @@ public class ritementcalculator {
 	System.out.println("How many years are you planning to work? ");  // prompts users for years planning to work
 	YearsToWork = input.nextDouble(); // user input set to variable
 	
-	System.out.println("What is your annual return (%) before work? "); 
+	System.out.println("What is your annual return (%) for work? "); 
 	AnnualReturnBeforeWork = input.nextDouble();
 	while (AnnualReturnBeforeWork<0 || AnnualReturnBeforeWork>20){   // keeps values within required range w/ while loop
 			System.out.println("Please enter value between 0 and 20");
@@ -25,7 +25,7 @@ public class ritementcalculator {
 	System.out.println("How many years are you planning to be retired? ");
 	YearsRetired = input.nextDouble();
 	
-	System.out.println("What is your annual return (%) after work? ");
+	System.out.println("What is your annual return (%) after retirement? ");
 	AnnualReturnAfterWork = input.nextDouble();
 	while (AnnualReturnAfterWork<0 || AnnualReturnAfterWork>3) {    // values kept within range 0-3%
 	System.out.println("Please enter value between 0 and 3 ");
@@ -48,6 +48,6 @@ public class ritementcalculator {
 	SaveEachMonth = SaveEachMonth*100;
 	SaveEachMonth = Math.round(SaveEachMonth); // rounds to 2 decimal places
 	SaveEachMonth = SaveEachMonth/100;
-	System.out.println("The amount you to save each month is: $" + SaveEachMonth);	
+	System.out.println("The amount you need to save each month is: $" + SaveEachMonth);	
 	}
 }
