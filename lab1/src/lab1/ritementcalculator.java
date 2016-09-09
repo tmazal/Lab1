@@ -16,7 +16,7 @@ public class ritementcalculator {
 	System.out.println("How many years are you planning to work? ");  // prompts users for years planning to work
 	YearsToWork = input.nextDouble(); // user input set to variable
 	
-	System.out.println("What is your annual return (%) for work? "); 
+	System.out.println("What is your annual return (%) before retirement? "); 
 	AnnualReturnBeforeWork = input.nextDouble();
 	while (AnnualReturnBeforeWork<0 || AnnualReturnBeforeWork>20){   // keeps values within required range w/ while loop
 			System.out.println("Please enter value between 0 and 20");
